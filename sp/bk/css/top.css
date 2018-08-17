@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*レスポンシブサイズ設定*/
+.main_v {
+  margin-bottom: 20px;
+  position: relative; }
+  .main_v .caption {
+    position: absolute;
+    bottom: 0;
+    line-height: 0; }
+
+.t_bnr {
+  margin-bottom: 20px; }
+
+.center_bnr {
+	max-width: calc(100% - 30px);
+	display: block;
+	margin: 0 auto;
+	padding: 10px 15px;
+}
+
+
+/*トップページ共通タイトル*/
+.top_tit {
+  text-align: center;
+  position: relative;
+  margin: 0 0 20px 0; }
+  .top_tit:before {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: calc(100%　-　230px);
+    width: 30%;
+    content: " ";
+    display: inline-block;
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%; }
+  .top_tit:after {
+    position: absolute;
+    right: 0;
+    height: 10px;
+    width: calc(100%　-　230px);
+    width: 30%;
+    content: " ";
+    display: inline-block;
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%; }
+  .top_tit img {
+    max-height: 30px; }
+
+/*お客様の声*/
+.t_voice {
+  margin-bottom: 30px;
+  background: url(../images/common/bg1.png) 50% 50%;
+  padding: 25px 0 10px; }
+  .t_voice .top_tit:before {
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%;
+    width: 30%; }
+  .t_voice .top_tit:after {
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%;
+    width: 30%; }
+  .t_voice .box {
+    padding: 0 15px; }
+    .t_voice .box .pic, .t_voice .box .name {
+      display: block;
+      text-align: center; }
+    .t_voice .box .pic {
+      margin-bottom: 15px; }
+    .t_voice .box .name {
+      margin-bottom: 10px; }
+  .t_voice .more_btn {
+    width: 50%;
+    margin: auto auto 15px; }
+
+/*施工事例*/
+.t_seko {
+  margin-bottom: 30px;
+  background: #eef2c3;
+  padding: 25px 0 10px; }
+  .t_seko .top_tit:before {
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%;
+    width: 30%; }
+  .t_seko .top_tit:after {
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%;
+    width: 30%; }
+  .t_seko .box {
+    padding: 0 15px; }
+    .t_seko .box .pic, .t_seko .box .tit {
+      display: block;
+      text-align: center; }
+    .t_seko .box .pic {
+      margin-bottom: 15px; }
+    .t_seko .box .tit {
+      margin-bottom: 10px; }
+  .t_seko .more_btn {
+    width: 50%;
+    margin: auto auto 15px; }
+
+/*タブエリア　イベント・タツログ*/
+.t_tab_area {
+  padding-bottom: 20px; }
+  .t_tab_area .tab {
+    -js-display: flex;
+    display: flex; }
+    .t_tab_area .tab li {
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      padding: 10px;
+      background: #e8d9b8; }
+      .t_tab_area .tab li.active {
+        background: #68501d; }
+      .t_tab_area .tab li img {
+        height: 12px; }
+  .t_tab_area .tab_inner {
+    border: solid 1px #68501d; }
+  .t_tab_area .hide {
+    display: none; }
+  .t_tab_area .more {
+    text-align: center; }
+    .t_tab_area .more .more_btn {
+      width: 50%;
+      margin: auto; }
+
+/*イベント情報*/
+.t_event {
+  padding: 15px;
+  margin-bottom: 20px; }
+  .t_event .box {
+    margin-bottom: 10px; }
+    .t_event .box a {
+      display: block;
+      -js-display: flex;
+      display: flex;
+      justify-content: space-between; }
+      .t_event .box a .pic {
+        width: 35%;
+        display: block; }
+      .t_event .box a .text {
+        display: block;
+        width: 62%; }
+        .t_event .box a .text .date, .t_event .box a .text .place, .t_event .box a .text .tit {
+          display: block;
+          margin-bottom: 5px; }
+        .t_event .box a .text .date {
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          background: #eef2c3;
+          padding: 8px;
+          margin-bottom: 10px; }
+
+/*タツログ*/
+.t_tatsulog {
+  padding: 15px;
+  margin-bottom: 20px; }
+  .t_tatsulog .box {
+    margin-bottom: 10px; }
+    .t_tatsulog .box a {
+      display: block;
+      -js-display: flex;
+      display: flex;
+      justify-content: space-between; }
+      .t_tatsulog .box a .pic {
+        width: 35%;
+        display: block; }
+      .t_tatsulog .box a .text {
+        display: block;
+        width: 62%;
+        line-height: 1.6em; }
+        .t_tatsulog .box a .text .date, .t_tatsulog .box a .text .place, .t_tatsulog .box a .text .tit {
+          display: block;
+          margin-bottom: 5px; }
+        .t_tatsulog .box a .text .date {
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          background: #eef2c3;
+          padding: 8px;
+          margin-bottom: 10px; }
+
+/*工事ブログ*/
+.t_blog {
+  margin-bottom: 30px;
+  background: url(../images/common/bg2.png) 50% 50%;
+  padding: 25px 0 10px; }
+  .t_blog .top_tit:before {
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%;
+    width: 40%; }
+  .t_blog .top_tit:after {
+    background: url(../page_image/top/tit_bg1.png) no-repeat 50% 50%;
+    width: 40%; }
+  .t_blog .box {
+    padding: 0 15px; }
+    .t_blog .box .pic, .t_blog .box .tit, .t_blog .box .date, .t_blog .box .text {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.6em; }
+    .t_blog .box .tit {
+      margin-bottom: 10px; }
+  .t_blog .more_btn {
+    width: 50%;
+    margin: auto auto 15px; }
+
+/*商品ラインナップ*/
+.t_item {
+  margin-bottom: 30px;
+  background: url(../images/common/bg3.png) 50% 50%;
+  padding: 25px 0 10px; }
+  .t_item .top_tit:before {
+    background: url(../page_image/top/tit_bg2.png) no-repeat 50% 50%;
+    width: 40%; }
+  .t_item .top_tit:after {
+    background: url(../page_image/top/tit_bg2.png) no-repeat 50% 50%;
+    width: 40%; }
+  .t_item li {
+    margin-bottom: 15px; }
+
+.t_bnr { width:90%; margin:0 5% 3% 5%;}
+
+/*お知らせ*/
+#oshirase {
+    width: 80%;
+    border: double 5px #F00;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    line-height: 1.6em;
+    font-size: 12px;
+    text-align: left;
+}
